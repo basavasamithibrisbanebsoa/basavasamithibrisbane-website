@@ -1,0 +1,155 @@
+media:
+  - name: photos
+    label: Photos and logos
+    input: public/assets/uploads
+    output: /assets/uploads
+    extensions: [jpg, jpeg, png, webp]
+    categories: [image]
+    rename: safe
+  - name: newsletters
+    label: Newsletters and documents
+    input: public/newsletters/files
+    output: /newsletters/files
+    extensions: [pdf]
+    categories: [document]
+    rename: safe
+
+content:
+  - name: community
+    label: Community content
+    type: group
+    items:
+      - name: gallery
+        label: Photo albums
+        type: file
+        path: public/data/gallery.json
+        format: json
+        list: true
+        fields:
+          - name: title
+            label: Photo title
+            type: string
+          - name: album
+            label: Album or activity
+            type: string
+          - name: caption
+            label: Caption
+            type: text
+          - name: date
+            label: Activity date
+            type: date
+            required: false
+          - name: image
+            label: Photo
+            type: image
+            options:
+              media: photos
+          - name: alt
+            label: Image description for accessibility
+            type: string
+      - name: events
+        label: Events calendar
+        type: file
+        path: public/data/events.json
+        format: json
+        list: true
+        fields:
+          - name: title
+            type: string
+          - name: date
+            type: date
+          - name: time
+            type: string
+            required: false
+          - name: location
+            type: string
+            required: false
+          - name: summary
+            type: text
+          - name: registration_url
+            label: Registration link
+            type: string
+            required: false
+      - name: newsletter_archive
+        label: Newsletters and notices
+        type: file
+        path: public/data/newsletters.json
+        format: json
+        list: true
+        fields:
+          - name: title
+            type: string
+          - name: issue
+            label: Issue or edition
+            type: string
+            required: false
+          - name: date
+            type: date
+          - name: summary
+            type: text
+          - name: document
+            label: PDF file
+            type: file
+            options:
+              media: newsletters
+              extensions: [pdf]
+      - name: stories
+        label: Blog and community stories
+        type: file
+        path: public/data/stories.json
+        format: json
+        list: true
+        fields:
+          - name: title
+            type: string
+          - name: date
+            type: date
+          - name: summary
+            type: text
+          - name: body
+            label: Story text
+            type: text
+          - name: cover_image
+            label: Cover photo
+            type: image
+            required: false
+            options:
+              media: photos
+      - name: sponsor_profiles
+        label: Sponsor profiles
+        type: file
+        path: public/data/sponsors.json
+        format: json
+        list: true
+        fields:
+          - name: name
+            label: Business or sponsor name
+            type: string
+          - name: description
+            type: text
+          - name: website
+            label: Website link
+            type: string
+            required: false
+          - name: logo
+            type: image
+            required: false
+            options:
+              media: photos
+      - name: office_bearers
+        label: Office bearer portraits
+        type: file
+        path: public/data/office-bearers.json
+        format: json
+        list: true
+        fields:
+          - name: name
+            type: string
+          - name: role
+            type: string
+          - name: photo
+            type: image
+            required: false
+            options:
+              media: photos
+

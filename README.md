@@ -20,18 +20,13 @@ The site combines recovered historical material with the current office-bearer d
 
 Open `public/index.html` in a browser for a simple preview, or serve `public/` with any static web server to test the root-relative asset paths and page routes.
 
-## Adding committee photos and new material
+## Adding and editing website content
 
-This is a static GitHub Pages website. It does not accept uploads or store member applications on the public site. An administrator can add approved content to the repository and push an update.
+The repository includes a Pages CMS configuration in `.pages.yml`. After the repository owner installs the official Pages CMS GitHub App for this repository, authorised editors can use the hosted editor to upload activity photos and newsletter PDFs and edit event, gallery, newsletter, story, sponsor, and office-bearer records. The site reads records from `public/data/` and GitHub Pages deploys each saved commit automatically. Setup instructions are published at `/content-management/`.
 
-- Committee portraits: put approved JPG or WebP files in `public/assets/images/people/`, then replace the initial placeholders in `public/index.html` and `public/committee/index.html` with the image paths and alt text.
-- Monthly newsletters: add accessible PDF files under `public/newsletters/files/` using a date in each filename, then add a dated download card to `public/newsletters/index.html`.
-- Activity photos: add selected, approved images under `public/assets/images/activities/` and update `public/activities/index.html` with captions and dates.
-- Blog articles: create a dated article under `public/blog/` and add a summary card to `public/blog/index.html`.
-- Sponsor advertising: add a sponsor logo only with permission, then include an approved description, link, and agreed placement in `public/sponsors/index.html`.
+Pages CMS is an external hosted service. The repository owner must sign in there and grant the GitHub App access to this repository; this project does not grant that access by itself. Content and media stored in this public repository is publicly visible. Do not store member records, private contact lists, bank details, or payment credentials here.
 
-For online membership or event payments, first confirm membership categories, prices, renewal period, refund terms and an Australian payment provider. Use the provider’s hosted checkout. Do not place bank account details or payment credentials in public website files. The site has no backend to process payments or safely collect membership data.
-
+For membership or event payments, first confirm membership categories, prices, renewal period, refund terms, and an Australian payment provider. Use the provider's hosted checkout. The site has no backend to process payments or safely collect membership data.
 ## Search discovery
 
 Every public section has a descriptive page title, summary description, canonical URL and social preview metadata. `public/sitemap.xml` lists the live sections, and `public/robots.txt` permits search crawlers, including OpenAI's search crawler. The homepage includes structured organization and website details. Search engines still determine whether and where pages appear; prominent placement is not guaranteed.
