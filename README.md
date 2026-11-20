@@ -31,3 +31,9 @@ This is a static GitHub Pages website. It does not accept uploads or store membe
 - Sponsor advertising: add a sponsor logo only with permission, then include an approved description, link, and agreed placement in `public/sponsors/index.html`.
 
 For online membership or event payments, first confirm membership categories, prices, renewal period, refund terms and an Australian payment provider. Use the provider’s hosted checkout. Do not place bank account details or payment credentials in public website files. The site has no backend to process payments or safely collect membership data.
+
+## Search discovery
+
+Every public section has a descriptive page title, summary description, canonical URL and social preview metadata. `public/sitemap.xml` lists the live sections, and `public/robots.txt` permits search crawlers, including OpenAI's search crawler. The homepage includes structured organization and website details. Search engines still determine whether and where pages appear; prominent placement is not guaranteed.
+
+After the domain is verified, add `https://www.basavasamithibrisbane.com.au/` to Google Search Console and Bing Webmaster Tools, verify ownership using the method those services provide, and submit `https://www.basavasamithibrisbane.com.au/sitemap.xml`. Verification codes must come from the account owner and should not be guessed or committed to the public repository. Keep useful page content current and share the domain through the Samithi's official social profiles and partner/community links.
