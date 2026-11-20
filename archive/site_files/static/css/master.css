@@ -1,0 +1,16 @@
+/*** Master Css ***/
+
+
+@import url("../css/reset.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url("../css/owl.carousel.css");
+@import url("../css/owl.theme.default.min.css");
+@import url("../css/marquee.css");
+@import url("../css/jqvl-page.css");
+@import url("../css/lightgallery.css");
+@import url("../css/screen_styles.css");
+@import url("../css/screen_layout_large.css");
+@import url("../css/menu.css");
+@import url("../css/screen_layout_medium.css") only screen and (min-width:745px) and (max-width:945px);
+@import url("../css/screen_layout_small.css") only screen and (min-width:50px) and (max-width:744px);
+

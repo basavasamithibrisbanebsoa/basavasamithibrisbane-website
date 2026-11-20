@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+
+#search input[type="text"] {
+  height: 20px;
+  font-size: 20px;
+}
+
+#mainNav a{
+	font-size: 0.80em;
+}
+#search input[type="text"]:focus {
+  width: 350px;
+}
+
+#event {
+	display: none;
+
+	
+}
+
+
+.minContent{
+	padding: 1.5em 0;
+}
+.minContent h1{
+	font-size: 1.2em;
+	font-weight: 400;
+	
+}
+.minContent a {
+	background:  #ffa600;
+	margin-left: 10px;
+	font-size: 0.8em;
+	
+}
+#tiles {
+	padding: 0.5em 0;
+	padding-bottom: 5em;
+}
+#tiles  #sm-tiles {
+	
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+#tiles .col-1,.col-2,.col-3
+ {
+	display: none;
+
+	content: "";
+
+}
+
+
+#sm-tiles li{
+	display: inline-block;
+	height: 103px;
+	background-size: 90px 103px;
+	width: 45%;
+	text-align: left;
+	padding: 15px 0;
+	margin-top: 3px;
+}
+
+#sm-tiles .sm-row1 .smcol1 {
+	
+	background: url(../images/kings.png) no-repeat;
+	background-color: #e54c3c;
+}
+
+
+#sm-tiles .sm-row1 .smcol2 {
+	
+	background: url(../images/linga.png) no-repeat;
+	background-color: #23B574;
+	margin-top:65px;
+	
+}
+
+#sm-tiles .sm-row2 .smcol3 {
+	background: url(../images/aus.png) no-repeat;
+	background-color: #F15723;
+	
+}
+
+#sm-tiles .sm-row2 .smcol4 {
+	background: url(../images/camera.png) no-repeat;
+	background-color: #01A89E;
+	
+}
+
+#sm-tiles .sm-row3 .smcol5 {
+	background: url(../images/book.png) no-repeat;
+	background-color: #F7921E;
+	
+}
+
+#sm-tiles .sm-row3 .smcol6 {
+	background: url(../images/bris.png) no-repeat;
+	background-color: #2AABE4;
+	
+}
+
+#sm-tiles h1 {
+	margin-left: 115px;
+	padding: 20px 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.75em;
+
+}
+
+#sm-tiles .sm-row2 .smcol3 h1{
+	font-family: 'Medula One', cursive;
+} 
+#sm-tiles  h2 {
+	margin-left: 115px;
+	padding: 5px 0;
+	font-family: 'Medula One', cursive;
+	font-size: 2.75em;
+	font-weight: 400;
+	word-wrap: break-word;
+	
+}
+
+#sm-tiles .sm-row1 li:hover  {
+	background-color: #302B2F;
+	 cursor: pointer;
+	   -webkit-transition: background-color 1s ease-out;
+	  -moz-transition: background-color 1s ease-out;
+	  -o-transition: background-color 1s ease-out;
+	  transition: background-color 1s ease-out;
+}
+
+#sm-tiles .sm-row2 li:hover  {
+	background-color: #302B2F;
+	 cursor: pointer;
+	   -webkit-transition: background-color 1s ease-out;
+	  -moz-transition: background-color 1s ease-out;
+	  -o-transition: background-color 1s ease-out;
+	  transition: background-color 1s ease-out;
+}
+#sm-tiles .sm-row3 li:hover  {
+	background-color: #302B2F;
+	 cursor: pointer;
+	   -webkit-transition: background-color 1s ease-out;
+	  -moz-transition: background-color 1s ease-out;
+	  -o-transition: background-color 1s ease-out;
+	  transition: background-color 1s ease-out;
+}
+
+
+.news {
+	padding: 5em 4.16%;
+}
+
+
+
+
+/* About us page */
+
+
+.mpTwoColumn .mpTwoColumnTwo {
+	 
+		margin-top: -230px;
+	}
+
+.presPic {
+	
+	width: 20%;
+	
+}
+
+
+
+.mpPaperFooter .designation {
+	width: 75%;
+
+}
+
+
+
+.form-results {
+	width:85%;
+
+}
+
+
+.frm-head {
+	
+	width:85%;
+
+}
+
+
+
+
+
+#form  {
+	
+	width:75%;
+
+}	
+
+
+ /* Convention page */ 
+
+
+
+
+.culture-pg {
+	margin: 0 auto;
+}
+ .arts  {
+	
+	padding: 0 2%;
+}
+ .arts img{
+ 	width: 80%;
+ 	height: auto;
+ }
+
+
+ /*Sponsors Page */
+
+.mainsponsors {
+	display: none;
+}
+
+ .mainsponsors-md {
+ 	display: inline-block;
+	margin: 25px auto;
+	text-align: center;
+	font-family: "Lato",sans-serif;
+	font-weight: 300;
+
+}
+
+.mainsponsors-md h1 {
+	font-size: 3em;
+	margin: 1em 0;
+}
+.mainsponsors-md h2{
+	font-size: 2.5em;
+	margin: 15px 0;
+	line-height: 1em;
+	width: 100%;
+}
+
+.mainsponsors-md .sprow {
+	margin: 10px auto;
+	text-align: center;
+	
+}
+
+.mainsponsors-md .sprow a:hover {
+	border-top: 2px solid #302B2F;
+	border-bottom: 2px solid #FFA600;
+}

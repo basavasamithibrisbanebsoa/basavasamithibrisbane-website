@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/*
+Author : Preetham ;
+version :1.0;
+
+*
+/******************************************************
+1. Layout (global rules for all sizes)
+2. Header & Nav styles
+3. Main Body Content
+4. Sidebar Content
+5. Widget Content
+6. Footer Content
+7. Comments & Forms
+******************************************************/
+
+/****************************
+*****************************
+Color Guide 
+#Dark grey (Navbar,Bottom Footer) : #302B2F;
+#Tangy Orange: #F7931E;
+#Light Grey (Regiser section ,footer) : #696153;
+#Bright Orange (buttons) : #FFA600;
+# Half-white
+/****************************
+*****************************
+
+/****************************
+*****************************
+Typpography guide 
+
+Navigation - Ubuntu Condensed (24 px ) font-family: 'Ubuntu Condensed', sans-serif;
+Heading - Medul One 60px; font-family: 'Medula One', cursive;
+Body - Ubuntu; 16px    font-family: 'Ubuntu', sans-serif;
+tiles -Roboto font-family: 'Roboto', sans-serif;
+****************************
+****************************/
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Medula+One);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,700,300,900);
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes);
+
+
+
+/****************************
+*****************************
+1. Layout (global rules for all sizes)
+*****************************
+****************************/
+
+/*html5 display rule*/
+address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
+	display: block;
+}
+
+body {
+	background: #fff;
+	line-height: 1.5em;
+	font-size: 14px;
+	font-family: 'Ubuntu', sans-serif;
+	background: url(../images/grey-washed-wall.png);
+}
+
+.page {
+	max-width: 1220px;
+	margin: 0px auto;
+	position: relative; background-color: #fff;
+	box-shadow:-5px 0 5px -2px rgba(0, 0, 0, 0.15),5px 0 8px 2px rgba(0, 0, 0, 0.15);
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+li {
+	display: inline;
+}
+
+
+h1{
+	font-size: 2em;
+
+}
+
+h2{
+	font-size: 1.5em;
+
+}
+
+h3{
+	font-size: 1.2em;
+}
+
+.clearfix:before,.clearfix:after
+{
+	content: "";
+	display: table;
+}
+
+.clearfix:after
+{
+	clear: both;
+}
+
+
+/* Flex box */
+
+.vbox {
+        /* previous syntax */
+        display: -webkit-box;
+        display:    -moz-box;
+        display:         box;
+
+        -webkit-box-orient: vertical;
+           -moz-box-orient: vertical;
+            -ms-box-orient: vertical;
+                box-orient: vertical;
+
+        /* current syntax */
+        display: -webkit-flex;
+        display:    -moz-flex;
+        display:     -ms-flex;
+        display:         flex;
+
+        -webkit-flex-direction: column;
+           -moz-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+      }
+
+      /* items flex/expand horizontally */
+      .hbox {
+        /* previous syntax */
+        display: -webkit-box;
+        display:    -moz-box;
+        display:     -ms-box;
+        display:         box;
+
+        -webkit-box-orient: horizontal;
+           -moz-box-orient: horizontal;
+            -ms-box-orient: horizontal;
+                box-orient: horizontal;
+
+        /* current syntax */
+        display: -webkit-flex;
+        display:    -moz-flex;
+        display:     -ms-flex;
+        display:         flex;
+
+        -webkit-flex-direction: row;
+           -moz-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+      }
+s
