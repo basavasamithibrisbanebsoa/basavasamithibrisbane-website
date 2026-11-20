@@ -22,5 +22,61 @@
     "date": "",
     "image": "/assets/images/basava-statue.jpg",
     "alt": "Basavanna statue"
+  },
+  {
+    "title": "Picnic at Rocks Riverside Park",
+    "album": "September 2026 Picnic",
+    "caption": "Families and friends enjoying a day together at Rocks Riverside Park.",
+    "date": "2026-09-26",
+    "image": "/assets/uploads/picnic-2026/picnic-2026-01.jpg",
+    "alt": "Community picnic under the trees at Rocks Riverside Park"
+  },
+  {
+    "title": "A walk through the park",
+    "album": "September 2026 Picnic",
+    "caption": "A sunny afternoon at the community picnic.",
+    "date": "2026-09-26",
+    "image": "/assets/uploads/picnic-2026/picnic-2026-02.jpg",
+    "alt": "Picnic guest walking on a sunny path through the park"
+  },
+  {
+    "title": "Community games",
+    "album": "September 2026 Picnic",
+    "caption": "Guests taking part in outdoor activities together.",
+    "date": "2026-09-26",
+    "image": "/assets/uploads/picnic-2026/picnic-2026-03.jpg",
+    "alt": "Picnic guests gathered on the park lawn"
+  },
+  {
+    "title": "Play and laughter",
+    "album": "September 2026 Picnic",
+    "caption": "A shared moment from the September picnic.",
+    "date": "2026-09-26",
+    "image": "/assets/uploads/picnic-2026/picnic-2026-04.jpg",
+    "alt": "Picnic guests enjoying outdoor games on the lawn"
+  },
+  {
+    "title": "Picnic videos",
+    "album": "September 2026 Picnic",
+    "caption": "Video clips from the picnic activities and community games.",
+    "date": "2026-09-26",
+    "video_url": "https://www.facebook.com/61556932513661/videos/pcb.122332181594231083/2305012070406096",
+    "video_note": "Facebook currently marks the post as shared with friends, so you may need to be logged in and included in its audience to play the clips."
+  },
+  {
+    "title": "More picnic moments",
+    "album": "September 2026 Picnic",
+    "caption": "Additional video moment from the September gathering.",
+    "date": "2026-09-26",
+    "video_url": "https://www.facebook.com/61556932513661/videos/pcb.122332181594231083/1147001091586599",
+    "video_note": "Facebook currently marks the post as shared with friends, so you may need to be logged in and included in its audience to play the clips."
+  },
+  {
+    "title": "Giving Back to the Community — The Spirit of Dasoha",
+    "album": "Community giving",
+    "caption": "In November 2026, Basava Samithi Brisbane participated in a donation campaign supporting Night Ninjas Inc. and people in need across the Redlands Coast community.",
+    "date": "2026-11-19",
+    "image": "/assets/uploads/picnic-2026/donation-campaign-night-ninjas-november-2026.jpg",
+    "alt": "Basava Samithi Brisbane community donation campaign acknowledgement for Night Ninjas Inc."
   }
 ]

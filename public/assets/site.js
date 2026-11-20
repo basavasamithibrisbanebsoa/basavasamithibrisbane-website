@@ -45,7 +45,7 @@ const formatDate = (value) => {
   return Number.isNaN(date.valueOf()) ? "" : new Intl.DateTimeFormat("en-AU", { day: "numeric", month: "long", year: "numeric" }).format(date);
 };
 
-const imageCard = ({ title, album, caption, image, alt, date }) => {
+const imageCard = ({ title, album, caption, image, alt, date, video, video_url, video_note }) => {
   const card = make("article", "card activity-card gallery-card");
   const src = safeAsset(image);
   if (src) {
@@ -61,10 +61,29 @@ const imageCard = ({ title, album, caption, image, alt, date }) => {
     link.append(img);
     card.append(link);
   }
+  const videoSrc = safeAsset(video);
+  if (videoSrc) {
+    const player = make("video", "gallery-video");
+    player.src = videoSrc;
+    player.controls = true;
+    player.preload = "metadata";
+    player.playsInline = true;
+    player.setAttribute("aria-label", title || "Basava Samithi community video");
+    card.append(player);
+  }
   const meta = [album, formatDate(date)].filter(Boolean).join(" · ");
   if (meta) card.append(make("span", "event-date", meta));
   if (title) card.append(make("h3", "", title));
   if (caption) card.append(make("p", "", caption));
+  const videoLink = safeWebLink(video_url);
+  if (videoLink) {
+    const link = make("a", "card-link", "Watch video on Facebook ↗");
+    link.href = videoLink;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    card.append(link);
+  }
+  if (video_note) card.append(make("p", "small-note", video_note));
   return card;
 };
 

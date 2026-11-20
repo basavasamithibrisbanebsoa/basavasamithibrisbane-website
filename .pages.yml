@@ -13,6 +13,13 @@ media:
     extensions: [pdf]
     categories: [document]
     rename: safe
+  - name: videos
+    label: Community videos
+    input: public/assets/uploads/videos
+    output: /assets/uploads/videos
+    extensions: [mp4, webm]
+    categories: [video]
+    rename: safe
 
 content:
   - name: community
@@ -42,8 +49,24 @@ content:
           - name: image
             label: Photo
             type: image
+            required: false
             options:
               media: photos
+          - name: video
+            label: Video file (MP4 or WebM)
+            type: file
+            required: false
+            options:
+              media: videos
+              extensions: [mp4, webm]
+          - name: video_url
+            label: External video link
+            type: string
+            required: false
+          - name: video_note
+            label: Video access note
+            type: string
+            required: false
           - name: alt
             label: Image description for accessibility
             type: string
